@@ -1,10 +1,7 @@
-import { getTemplates } from "./get-templates.ts";
-import { updateVersions } from "./update-versions.ts";
-import { installDependencies } from "./install-dependencies.ts";
-import { commitChanges } from "./commit-changes.ts";
+import { updateTemplate } from "./update-template.ts";
 import { version } from "./version.ts";
 
-commitChanges(
+updateTemplate(
   "/Users/vrtischev/code/templates-mantine/next-app-template",
   version
 );

@@ -7,4 +7,5 @@ export async function commitChanges(templatePath: string, version: string) {
     ["commit", "-m", `Update @mantine/* dependencies to version ${version}`],
     { cwd: templatePath }
   );
+  await execa("git", ["push"], { cwd: templatePath });
 }

@@ -3,6 +3,7 @@ import chalk from "chalk";
 import { updateVersions } from "./update-versions.ts";
 import { installDependencies } from "./install-dependencies.ts";
 import { commitChanges } from "./commit-changes.ts";
+import { cleanTemplate } from "./clean-template.ts";
 
 export async function updateTemplate(templatePath: string, version: string) {
   const templateName = templatePath.split("/").pop();
@@ -11,6 +12,7 @@ export async function updateTemplate(templatePath: string, version: string) {
       version
     )}`
   );
+  await cleanTemplate(templatePath);
   await updateVersions(templatePath, version);
   await installDependencies(templatePath);
   await commitChanges(templatePath, version);

@@ -6,7 +6,8 @@
   "repository": "git@github.com:rtivital/mantine-templates-update-script.git",
   "license": "MIT",
   "scripts": {
-    "update": "ts-node --esm src/update.ts"
+    "update": "ts-node --esm src/update.ts",
+    "bump": "ts-node --esm src/bump.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",

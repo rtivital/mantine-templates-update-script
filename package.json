@@ -2,10 +2,11 @@
   "name": "mantine-templates-update-script",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:rtivital/mantine-templates-update-script.git",
   "license": "MIT",
   "scripts": {
-    "update": "ts-node src/update.ts"
+    "update": "ts-node --esm src/update.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
@@ -15,7 +16,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "fs-extra": "^11.1.1",
-    "yargs": "^17.7.2"
+    "execa": "^7.1.1",
+    "fs-extra": "^11.1.1"
   }
 }

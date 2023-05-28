@@ -1,6 +1,8 @@
-import { argv } from "yargs";
 import { getTemplates } from "./get-templates";
+import { updateVersions } from "./update-versions";
+import { version } from "./version";
 
-const version = (argv as any)._[0];
-
-getTemplates();
+updateVersions(
+  "/Users/vrtischev/code/templates-mantine/next-app-template",
+  version
+);

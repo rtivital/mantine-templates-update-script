@@ -9,6 +9,14 @@
     "rootPath": "../extension-template"
   },
   {
+    "name": "redwood-template",
+    "packageJsonPaths": [
+      "../redwood-template/package.json",
+      "../redwood-template/web/package.json"
+    ],
+    "rootPath": "../redwood-template"
+  },
+  {
     "name": "gatsby-template",
     "packageJsonPaths": ["../gatsby-template/package.json"],
     "rootPath": "../gatsby-template"

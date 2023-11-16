@@ -1,0 +1,61 @@
+[
+  {
+    "name": "extension-template",
+    "packageJsonPaths": [
+      "../extension-template/package.json",
+      "../extension-template/package/package.json",
+      "../extension-template/docs/package.json"
+    ],
+    "rootPath": "../extension-template"
+  },
+  {
+    "name": "gatsby-template",
+    "packageJsonPaths": ["../gatsby-template/package.json"],
+    "rootPath": "../gatsby-template"
+  },
+  {
+    "name": "next-app-min-template",
+    "packageJsonPaths": ["../next-app-min-template/package.json"],
+    "rootPath": "../next-app-min-template"
+  },
+  {
+    "name": "next-app-template",
+    "packageJsonPaths": ["../next-app-template/package.json"],
+    "rootPath": "../next-app-template"
+  },
+  {
+    "name": "next-pages-min-template",
+    "packageJsonPaths": ["../next-pages-min-template/package.json"],
+    "rootPath": "../next-pages-min-template"
+  },
+  {
+    "name": "next-pages-template",
+    "packageJsonPaths": ["../next-pages-template/package.json"],
+    "rootPath": "../next-pages-template"
+  },
+  {
+    "name": "next-vanilla-extract-template",
+    "packageJsonPaths": ["../next-vanilla-extract-template/package.json"],
+    "rootPath": "../next-vanilla-extract-template"
+  },
+  {
+    "name": "remix-template",
+    "packageJsonPaths": ["../remix-template/package.json"],
+    "rootPath": "../remix-template"
+  },
+  {
+    "name": "vite-min-template",
+    "packageJsonPaths": ["../vite-min-template/package.json"],
+    "rootPath": "../vite-min-template"
+  },
+  {
+    "name": "vite-template",
+    "packageJsonPaths": ["../vite-template/package.json"],
+    "rootPath": "../vite-template"
+  },
+  {
+    "name": "vite-vanilla-extract-template",
+    "packageJsonPaths": ["../vite-vanilla-extract-template/package.json"],
+    "rootPath": "../vite-vanilla-extract-template"
+  }
+]

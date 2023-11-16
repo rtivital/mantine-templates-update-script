@@ -1,5 +1,6 @@
 {
   "name": "mantine-templates-update-script",
+  "type": "module",
   "description": "A script to update dependencies of all mantine templates",
   "version": "1.0.0",
   "packageManager": "yarn@4.0.2",
@@ -7,9 +8,8 @@
   "repository": "git@github.com:rtivital/mantine-templates-update-script.git",
   "license": "MIT",
   "scripts": {
-    "update": "esno src/update.ts",
-    "update:postcss": "esno src/update-postcss-preset.ts",
-    "bump": "esno src/bump.ts"
+    "update": "esno src/update-mantine-dependencies.ts",
+    "update:postcss": "esno src/update-postcss-dependencies.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",

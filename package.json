@@ -1,6 +1,8 @@
 {
   "name": "mantine-templates-update-script",
+  "description": "A script to update dependencies of all mantine templates",
   "version": "1.0.0",
+  "packageManager": "yarn@4.0.2",
   "main": "index.js",
   "repository": "git@github.com:rtivital/mantine-templates-update-script.git",
   "license": "MIT",
@@ -10,11 +12,11 @@
     "bump": "esno src/bump.ts"
   },
   "devDependencies": {
-    "@types/fs-extra": "^11.0.1",
-    "@types/node": "^20.5.7",
-    "@types/signale": "^1.4.4",
-    "@types/yargs": "^17.0.24",
-    "esno": "^0.17.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.9.0",
+    "@types/signale": "^1.4.7",
+    "@types/yargs": "^17.0.31",
+    "esno": "^4.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },

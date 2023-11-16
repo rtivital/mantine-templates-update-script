@@ -62,8 +62,8 @@
     "rootPath": "../vite-template"
   },
   {
-    "name": "vite-vanilla-extract-template",
-    "packageJsonPaths": ["../vite-vanilla-extract-template/package.json"],
-    "rootPath": "../vite-vanilla-extract-template"
+    "name": "vite-vanila-extract-template",
+    "packageJsonPaths": ["../vite-vanila-extract-template/package.json"],
+    "rootPath": "../vite-vanila-extract-template"
   }
 ]

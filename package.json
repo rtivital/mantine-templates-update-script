@@ -3,13 +3,14 @@
   "type": "module",
   "description": "A script to update dependencies of all mantine templates",
   "version": "1.0.0",
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.2.2",
   "main": "index.js",
   "repository": "git@github.com:rtivital/mantine-templates-update-script.git",
   "license": "MIT",
   "scripts": {
     "update": "esno src/update-mantine-dependencies.ts",
-    "update:postcss": "esno src/update-postcss-dependencies.ts"
+    "update:postcss": "esno src/update-postcss-dependencies.ts",
+    "update:yarn": "esno src/update-yarn.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
@@ -22,7 +23,7 @@
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "execa": "^8.0.1",
+    "execa": "^9.1.0",
     "fs-extra": "^11.1.1",
     "signale": "^1.4.0"
   }

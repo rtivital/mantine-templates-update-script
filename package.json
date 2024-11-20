@@ -8,23 +8,23 @@
   "repository": "git@github.com:rtivital/mantine-templates-update-script.git",
   "license": "MIT",
   "scripts": {
-    "update": "esno src/update-mantine-dependencies.ts",
-    "update:postcss": "esno src/update-postcss-dependencies.ts",
-    "update:yarn": "esno src/update-yarn.ts"
+    "update": "tsx src/update-mantine-dependencies.ts",
+    "update:postcss": "tsx src/update-postcss-dependencies.ts",
+    "update:yarn": "tsx src/update-yarn.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.9.0",
+    "@types/node": "^22.9.1",
     "@types/signale": "^1.4.7",
-    "@types/yargs": "^17.0.31",
-    "esno": "^4.0.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "@types/yargs": "^17.0.33",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "execa": "^9.1.0",
-    "fs-extra": "^11.1.1",
+    "execa": "^9.5.1",
+    "fs-extra": "^11.2.0",
     "signale": "^1.4.0"
   }
 }

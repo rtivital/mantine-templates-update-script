@@ -47,11 +47,6 @@
     "rootPath": "../next-vanilla-extract-template"
   },
   {
-    "name": "remix-template",
-    "packageJsonPaths": ["../remix-template/package.json"],
-    "rootPath": "../remix-template"
-  },
-  {
     "name": "vite-min-template",
     "packageJsonPaths": ["../vite-min-template/package.json"],
     "rootPath": "../vite-min-template"

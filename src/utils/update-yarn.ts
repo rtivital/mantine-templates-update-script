@@ -2,14 +2,6 @@ import signale from "signale";
 import type { Template } from "./get-templates-list.ts";
 import { execa } from "execa";
 
-function getMantineDependencies(dependencies: any) {
-  if (dependencies === undefined) return [];
-
-  return Object.keys(dependencies).filter((dependency) =>
-    dependency.startsWith("@mantine/")
-  );
-}
-
 export async function updateYarn(template: Template, version: string) {
   try {
     await execa("yarn", ["set", "version", version], {

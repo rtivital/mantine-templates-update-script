@@ -10,7 +10,8 @@
   "scripts": {
     "update": "tsx src/update-mantine-dependencies.ts",
     "update:postcss": "tsx src/update-postcss-dependencies.ts",
-    "update:yarn": "tsx src/update-yarn.ts"
+    "update:yarn": "tsx src/update-yarn.ts",
+    "update:node": "tsx src/update-node.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",

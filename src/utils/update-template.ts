@@ -8,7 +8,10 @@ import { cleanTemplate } from "./clean-template.ts";
 interface UpdateTemplateInput {
   template: Template;
   version: string;
-  updateVersions: (template: Template, version: string) => Promise<void>;
+  updateVersions: (
+    template: Template,
+    version: string
+  ) => Promise<boolean | void>;
   commitMessage: string;
 }
 
@@ -25,7 +28,17 @@ export async function updateTemplate({
   );
 
   await cleanTemplate(template);
-  await updateVersions(template, version);
+  const changed = await updateVersions(template, version);
+
+  if (changed === false) {
+    signale.info(
+      `Template ${chalk.cyan(template.name)} already uses version ${chalk.green(
+        version
+      )}, no update needed`
+    );
+    return;
+  }
+
   await installDependencies(template);
   await commitChanges(template, commitMessage.replace("{{version}}", version));
 

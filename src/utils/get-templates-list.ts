@@ -1,4 +1,4 @@
-import templates from "../templates-list.json";
+import templates from "../templates-list.json" with { type: "json" };
 import { getPath, getPaths } from "./get-path.ts";
 
 export type Template = (typeof templates)[number];

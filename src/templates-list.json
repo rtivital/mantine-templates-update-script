@@ -47,5 +47,10 @@
     "name": "vite-vanilla-extract-template",
     "packageJsonPaths": ["../vite-vanilla-extract-template/package.json"],
     "rootPath": "../vite-vanilla-extract-template"
+  },
+  {
+    "name": "mantine-tanstack-start-template",
+    "packageJsonPaths": ["../mantine-tanstack-start-template/package.json"],
+    "rootPath": "../mantine-tanstack-start-template"
   }
 ]
